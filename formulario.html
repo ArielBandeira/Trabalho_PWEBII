@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Passport</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+  <h1>Formulário</h1>
+   <fieldset class="formulario">
+    <form id="form" action="">
+
+        <legend>Nome</legend><input type="text" id="nome"/>
+
+        <legend>Endereço</legend><input type="text" id="endereco"/>
+
+        <legend>Cidade</legend><input type="text" id="cidade"/>
+
+        <legend>UF</legend><input type="text" id="uf"/>
+
+        <legend>Telefone principal</legend><input type="text" id="telefone"/>
+
+        <legend>Celular</legend><input type="text" id="celular"/>
+
+        <legend>Email</legend><input type="text" id="email"/>
+
+        <legend>Profissão</legend><input type="text" id="profissao"/>
+
+        <legend>Motivo da solicitação</legend>
+        <select name="motivo" form="motivo">
+          <option value="trabalho">Trabalho</option>
+          <option value="turismo">Turismo</option>
+          <option value="estudo">Estudo</option>
+          <option value="sairPais">Sair do País</option>
+        </select>
+
+        <legend>RG</legend><input type="text" id="rg"/>
+        <legend>CNH</legend><input type="text" id="cnh"/>
+        <legend>CPF</legend><input type="text" id="cpf"/>
+        <legend>Título de Eleitor</legend><input type="text" id="titulo"/>
+
+        <legend>Tem passaporte antigo?</legend>
+        <input type="radio" name="temPass" id="sim" onclick="myFunctionS()"/>Sim
+        <input type="radio" name="temPass" id="nao" onclick="myFunctionN()"/>Não
+
+        <div id="numeroDoPass">
+          <legend>Número do passaporte</legend><input type="text" id="passport"/>
+        </div>
+
+        <br><input type="submit" value="Enviar" id="submit"/>
+
+    </form>
+  </fieldset>
+  </div>
+
+  <script>
+    function myFunctionS() {
+      document.getElementById("numeroDoPass").style.display = "block";
+    }
+    function myFunctionN() {
+      document.getElementById("numeroDoPass").style.display = "none";
+    }
+  </script>
+  <script src="js/vendor/MaskJS.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

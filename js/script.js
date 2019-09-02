@@ -1,0 +1,26 @@
+const nome = document.querySelector("#nome");
+const endereco = document.querySelector("#endereco");
+const cidade = document.querySelector("#cidade");
+const uf = document.querySelector("#uf");
+const telefone = document.querySelector("#telefone");
+const celular = document.querySelector("#celular");
+const email = document.querySelector("#email");
+const profissao = document.querySelector("#profissao");
+const rg = document.querySelector("#rg");
+const cnh = document.querySelector("#cnh");
+const cpf = document.querySelector("#cpf");
+const titulo = document.querySelector("#titulo");
+const passport = document.querySelector("#passport");
+
+MaskJS(nome).mascararLetra();
+MaskJS(cidade).mascararLetra();
+MaskJS(uf).mascararLetra();
+MaskJS(telefone).mascararPadrao("(99) 9999-9999");
+MaskJS(celular).mascararPadrao("(99) 9-9999-9999");
+MaskJS(email).mascararAlfanumerico();
+MaskJS(profissao).mascararLetra();
+MaskJS(rg).mascararNumero();
+MaskJS(cnh).mascararPadrao("99999999999");
+MaskJS(cpf).mascararPadrao("999.999.999-99");
+MaskJS(titulo).mascararPadrao("9999 9999 9999");
+MaskJS(passport).mascararPadrao("AA999999");
