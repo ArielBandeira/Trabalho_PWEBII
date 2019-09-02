@@ -14,11 +14,11 @@
   - Email(exemplo@site.com)
   - Profissão(Apenas letras)
   - Motivo da solicitação
-	|_Criar um select com 3 opções ___
-		1. Trabalho               |
-		2. Turismo                |__ Não admitir valor diferente destes
-		3. Estudo                 |
-		4. Sair do país      _____|
+	#### Criar um select com 3 opções
+		- 1. Trabalho               
+		- 2. Turismo                
+		- 3. Estudo                 
+		- 4. Sair do país      
 			           
   - RG(Apenas números. Pelo menos 6 dígitos)
   - CNH(99999999999)
